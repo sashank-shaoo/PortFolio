@@ -4,28 +4,28 @@ import SoftAurora from "../SoftAurora";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex flex-col md:flex-row bg-[#09090B] overflow-hidden pt-20">
+    <section className="relative min-h-screen w-full flex flex-col md:flex-row bg-white overflow-hidden pt-20">
       {/* Muted Aurora Background */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none mix-blend-screen overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-50 pointer-events-none mix-blend-multiply overflow-hidden">
         <SoftAurora enableMouseInteraction={true} mouseInfluence={0.3} />
       </div>
 
       {/* LEFT COLUMN: PRIMARY ANCHOR (65%) */}
-      <div className="relative z-10 flex-[1.6] flex flex-col justify-center px-6 md:px-16 py-12 md:py-0 border-r border-white/5">
+      <div className="relative z-10 flex-[1.6] flex flex-col justify-center px-6 md:px-16 py-12 md:py-0 border-r border-zinc-200">
         <div className="space-y-6 md:space-y-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em] animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-100 border border-zinc-200 rounded-full text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em] animate-fade-in">
             Available for New Projects
           </div>
 
-          <h1 className="text-6xl md:text-[9rem] font-black text-white leading-none tracking-tighter uppercase whitespace-nowrap">
+          <h1 className="text-6xl md:text-[9rem] font-black text-zinc-900 leading-none tracking-tighter uppercase whitespace-nowrap">
             Sashank <br />
-            <span className="text-zinc-700">Sahoo.</span>
+            <span className="text-zinc-400">Sahoo.</span>
           </h1>
 
           <div className="max-w-2xl space-y-8 animate-slide-up">
-            <p className="text-xl md:text-2xl text-zinc-400 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-zinc-600 font-medium leading-relaxed">
               Full-Stack Engineer specialized in architecting
-              <span className="text-white">
+              <span className="text-zinc-900">
                 {" "}
                 high-performance digital products{" "}
               </span>
@@ -35,14 +35,14 @@ const Hero = () => {
             <div className="flex flex-wrap gap-6 pt-4">
               <a
                 href="#projects"
-                className="h-14 px-10 bg-white text-black font-bold rounded-full hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group">
+                className="h-14 px-10 bg-black text-white font-bold rounded-full hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group">
                 View My Work
                 <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
               <a
                 href="#contact"
-                className="h-14 px-8 border border-white/10 text-white font-medium rounded-full hover:bg-white/5 transition-all flex items-center gap-3 text-sm">
+                className="h-14 px-8 border border-zinc-200 text-zinc-700 font-medium shadow-lg rounded-full hover:bg-zinc-50 transition-all flex items-center gap-3 text-sm">
                 Let's Talk
                 <Mail className="w-5 h-5 text-zinc-500" />
               </a>
@@ -52,18 +52,18 @@ const Hero = () => {
       </div>
 
       {/* RIGHT COLUMN: METADATA & LINKS (35%) */}
-      <div className="relative z-10 flex-1 flex flex-col divide-y divide-white/5">
+      <div className="relative z-10 flex-1 flex flex-col divide-y divide-zinc-200">
         {/* BLOCK 1: LOCATION & TIME */}
         <div className="p-8 md:p-16 flex flex-col justify-center gap-4">
           <div className="flex items-center gap-3 text-zinc-500 font-bold uppercase text-[10px] tracking-widest opaci">
             <Globe className="w-3 h-3" />
             Base Location
           </div>
-          <h3 className="text-white text-2xl font-bold tracking-tight">
+          <h3 className="text-zinc-900 text-2xl font-bold tracking-tight">
             Bhubaneswar, Odisha, India
           </h3>
-          <p className="text-zinc-500 text-sm">
-            Working remotely across GMT+5:30.
+          <p className="text-zinc-600 text-sm">
+            Currently Studying at Gita autonomous college, Bhubaneswar, Odisha, India. Pursuing MCA in Computer Science and Engineering.
           </p>
         </div>
 
@@ -74,15 +74,15 @@ const Hero = () => {
             Core Expertise
           </div>
           <div className="space-y-1">
-            <h3 className="text-white text-2xl font-bold tracking-tight">
+            <h3 className="text-zinc-900 text-2xl font-bold tracking-tight">
               Full-Stack Dev.
             </h3>
             <div className="flex flex-wrap gap-2 pt-2">
-              {["React", "Next.js", "Node.js", "PostgreSQL", "MangoDB"].map(
+              {["React", "Node.js", "AWS", "MongoDB", "Express.js"].map(
                 (tech) => (
                   <span
                     key={tech}
-                    className="text-xs text-zinc-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                    className="text-xs text-zinc-600 bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
                     {tech}
                   </span>
                 ),
@@ -101,8 +101,8 @@ const Hero = () => {
               {/* GitHub SVG */}
               <a
                 href="#"
-                className="flex items-center gap-4 text-white font-bold group">
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white group-hover:text-black transition-all">
+                className="flex items-center gap-4 text-zinc-900 font-bold group">
+                <div className="p-3 rounded-xl bg-zinc-100 border shadow-lg border-zinc-200 group-hover:bg-black group-hover:text-white transition-all">
                   <svg
                     viewBox="0 0 24 24"
                     className="w-5 h-5 fill-current"
@@ -117,8 +117,8 @@ const Hero = () => {
               {/* LinkedIn SVG */}
               <a
                 href="#"
-                className="flex items-center gap-4 text-white font-bold group">
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white group-hover:text-black transition-all">
+                className="flex items-center gap-4 text-zinc-900 font-bold group">
+                <div className="p-3 rounded-xl bg-zinc-100 border shadow-lg border-zinc-200 group-hover:bg-black group-hover:text-white transition-all">
                   <svg
                     viewBox="0 0 24 24"
                     className="w-5 h-5 fill-current"
