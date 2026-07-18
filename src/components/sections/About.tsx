@@ -27,7 +27,7 @@ const About = () => {
 
           <div className="space-y-6 max-w-2xl">
             <p className="text-xl md:text-2xl text-zinc-600 font-medium leading-relaxed">
-              Based in Mumbai, I am a{" "}
+              Based in Bhubaneswar, I am a{" "}
               <span className="text-zinc-900">Full-Stack Engineer</span>{" "}
               dedicated to building digital experiences that are as performant
               as they are beautiful. My approach combines deep technical
@@ -37,7 +37,7 @@ const About = () => {
 
             <p className="text-lg text-zinc-600 leading-relaxed">
               I specialize in the{" "}
-              <span className="text-zinc-900">TypeScript ecosystem</span>,
+              <span className="text-zinc-900">React ecosystem</span>,
               crafting highly scalable backend systems and fluid frontend
               interfaces. Whether it's optimizing database queries or perfecting
               a micro-interaction, my goal is always the same: excellence in

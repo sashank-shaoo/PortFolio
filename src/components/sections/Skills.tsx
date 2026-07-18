@@ -18,7 +18,7 @@ interface SkillCategoryProps {
 const SkillCategory = ({ title, icon, skills }: SkillCategoryProps) => (
   <div className="space-y-6 group">
     <div className="flex items-center gap-3">
-      <div className="p-2 bg-zinc-100 border border-zinc-200 rounded-lg text-zinc-600 group-hover:text-zinc-900 transition-colors duration-500">
+      <div className="p-2 bg-zinc-100 border shadow-md border-zinc-200 rounded-lg text-zinc-600 group-hover:text-zinc-900 transition-colors duration-500">
         {icon}
       </div>
       <h3 className="text-zinc-900 font-bold tracking-tight uppercase text-xs tracking-[0.2em]">
@@ -72,7 +72,7 @@ const Skills = () => {
     <section
       id="skills"
       className="relative w-full bg-white border-t border-zinc-200 px-6 md:px-16 py-16 md:py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-12 md:gap-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-12 md:gap-16">
         {/* SIDE MARGIN: SECTION INDICATOR */}
         <div className="hidden md:flex flex-col items-center">
           <span className="text-zinc-200 font-black text-6xl rotate-90 origin-center whitespace-nowrap mt-24 tracking-tighter opacity-100">
@@ -99,8 +99,6 @@ const Skills = () => {
                 "Next.js",
                 "Tailwind",
                 "TypeScript",
-                "Redux",
-                "Motion",
               ]}
             />
             <SkillCategory
@@ -110,7 +108,6 @@ const Skills = () => {
                 "Node.js",
                 "PostgreSQL",
                 "MongoDB",
-                "Prisma",
                 "GraphQL",
                 "Express",
               ]}
@@ -118,7 +115,7 @@ const Skills = () => {
             <SkillCategory
               title="Tools & Cloud"
               icon={<Wrench className="w-5 h-5" />}
-              skills={["Git", "Docker", "AWS", "Kubernetes"]}
+              skills={["Git", "Docker", "AWS"]}
             />
           </div>
         </div>

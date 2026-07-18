@@ -1,12 +1,12 @@
 import React from "react";
-import { ArrowUpRight, Mail, Globe, Cpu, Smartphone } from "lucide-react";
+import { ArrowUpRight, Mail, Globe, Cpu } from "lucide-react";
 import SoftAurora from "../SoftAurora";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen w-full flex flex-col md:flex-row bg-white overflow-hidden pt-20">
       {/* Muted Aurora Background */}
-      <div className="absolute inset-0 z-0 opacity-50 pointer-events-none mix-blend-multiply overflow-hidden">
+      <div className="hidden md:block absolute inset-0 z-0 opacity-50 pointer-events-none mix-blend-multiply overflow-hidden">
         <SoftAurora enableMouseInteraction={true} mouseInfluence={0.3} />
       </div>
 
@@ -43,7 +43,7 @@ const Hero = () => {
               <a
                 href="#contact"
                 className="h-14 px-8 border border-zinc-200 text-zinc-700 font-medium shadow-lg rounded-full hover:bg-zinc-50 transition-all flex items-center gap-3 text-sm">
-                Let's Talk
+                 {`Let's Talk`}
                 <Mail className="w-5 h-5 text-zinc-500" />
               </a>
             </div>

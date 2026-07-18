@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/common/Navbar";
 import Footer from "@/common/Footer";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import SmoothScroll from "@/components/SmoothScroll";
+import SmoothScroll from "@/components/SmoothScroll-OPTIMIZED";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
