@@ -10,7 +10,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-8 md:gap-16">
         {/* SIDE MARGIN: SECTION INDICATOR */}
         <div className="hidden md:flex flex-col items-center">
-          <span className="text-zinc-200 font-black text-6xl rotate-90 origin-center whitespace-nowrap mt-16 tracking-tighter opacity-100">
+          <span className="text-zinc-200 font-black text-6xl [writing-mode:vertical-rl] whitespace-nowrap mt-16 tracking-tighter opacity-100">
             01 / ABOUT
           </span>
         </div>

@@ -75,7 +75,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-12 md:gap-16">
         {/* SIDE MARGIN: SECTION INDICATOR */}
         <div className="hidden md:flex flex-col items-center">
-          <span className="text-zinc-200 font-black text-6xl rotate-90 origin-center whitespace-nowrap mt-24 tracking-tighter opacity-100">
+          <span className="text-zinc-200 font-black text-6xl [writing-mode:vertical-rl] whitespace-nowrap mt-16 tracking-tighter opacity-100">
             03 / SKILLS
           </span>
         </div>
@@ -129,6 +129,12 @@ const Skills = () => {
             </div>
 
             <div className="space-y-2">
+              <EducationItem
+                degree="MERN Stack Development"
+                institution="Appna College"
+                period="2024 — 2025"
+                description="Specialized in full-stack development with MERN stack"
+              />
               <EducationItem
                 degree="MCA Computer Science"
                 institution="Gandhi Institute of Technology and Advancment"

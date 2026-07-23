@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="p-8 md:p-16 flex flex-col justify-center gap-4">
           <div className="flex items-center gap-3 text-zinc-500 font-bold uppercase text-[10px] tracking-widest opaci">
             <Globe className="w-3 h-3" />
-            Base Location
+            Current Location
           </div>
           <h3 className="text-zinc-900 text-2xl font-bold tracking-tight">
             Bhubaneswar, Odisha, India
