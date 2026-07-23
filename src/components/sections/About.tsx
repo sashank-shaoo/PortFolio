@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full bg-white border-t border-zinc-200 px-6 md:px-16 py-16 md:py-24">
+      className="relative w-full bg-olive-100 border-t border-zinc-200 px-6 md:px-16 py-16 md:py-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-8 md:gap-16">
         {/* SIDE MARGIN: SECTION INDICATOR */}
         <div className="hidden md:flex flex-col items-center">
@@ -39,7 +39,7 @@ const About = () => {
               I specialize in the{" "}
               <span className="text-zinc-900">React ecosystem</span>,
               crafting highly scalable backend systems and fluid frontend
-              interfaces. Whether it's optimizing database queries or perfecting
+              interfaces. Whether {"it's"} optimizing database queries or perfecting
               a micro-interaction, my goal is always the same: excellence in
               every pixel and every line of code.
             </p>
@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         {/* RIGHT COLUMN: PROFESSIONAL FOCUS (35%) */}
-        <div className="flex flex-col gap-10 md:border-l border-zinc-200 md:pl-12 py-4 overflow-hidden   ">
+        <div className="flex flex-col gap-10 md:border-l border-zinc-200 md:pl-12 py-4 overflow-clip   ">
           <div className="space-y-8">
             <p className="text-zinc-400 font-black uppercase text-[10px] tracking-[0.5em]">
               Professional Focus.

@@ -166,39 +166,47 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
         strokeLinecap="round"
       />
       <defs>
-        <motion.linearGradient
-          className="transform-gpu"
+        <linearGradient
           id={id}
           gradientUnits={"userSpaceOnUse"}
-          initial={{
-            x1: "0%",
-            x2: "0%",
-            y1: "0%",
-            y2: "0%",
-          }}
-          animate={{
-            x1: gradientCoordinates.x1,
-            x2: gradientCoordinates.x2,
-            y1: gradientCoordinates.y1,
-            y2: gradientCoordinates.y2,
-          }}
-          transition={{
-            delay,
-            duration,
-            ease: "linear",
-            repeat,
-            repeatDelay,
-          }}
+          x1={gradientCoordinates.x1[0]}
+          x2={gradientCoordinates.x2[0]}
+          y1={gradientCoordinates.y1[0]}
+          y2={gradientCoordinates.y2[0]}
         >
           <stop stopColor={gradientStartColor} stopOpacity="0"></stop>
           <stop stopColor={gradientStartColor}></stop>
           <stop offset="32.5%" stopColor={gradientStopColor}></stop>
-          <stop
-            offset="100%"
-            stopColor={gradientStopColor}
-            stopOpacity="0"
-          ></stop>
-        </motion.linearGradient>
+          <stop offset="100%" stopColor={gradientStopColor} stopOpacity="0"></stop>
+          <animate
+            attributeName="x1"
+            values={`${gradientCoordinates.x1[0]};${gradientCoordinates.x1[1]}`}
+            dur={`${duration}s`}
+            begin={`${delay}s`}
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="x2"
+            values={`${gradientCoordinates.x2[0]};${gradientCoordinates.x2[1]}`}
+            dur={`${duration}s`}
+            begin={`${delay}s`}
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y1"
+            values={`${gradientCoordinates.y1[0]};${gradientCoordinates.y1[1]}`}
+            dur={`${duration}s`}
+            begin={`${delay}s`}
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y2"
+            values={`${gradientCoordinates.y2[0]};${gradientCoordinates.y2[1]}`}
+            dur={`${duration}s`}
+            begin={`${delay}s`}
+            repeatCount="indefinite"
+          />
+        </linearGradient>
       </defs>
     </svg>
   )

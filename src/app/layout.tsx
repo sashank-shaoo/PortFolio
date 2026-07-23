@@ -29,16 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-[#09090B] text-zinc-100 antialiased">
+      <body className="bg-[#cbcbd1] text-zinc-100 antialiased overflow-x-hidden">
         <SmoothScroll>
-          <ProgressiveBlur
-            height="8rem"
-            position="top"
-            className="fixed top-0 h-40 z-40 pointer-events-none "
-          />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+        <ProgressiveBlur
+          height="8rem"
+          position="top"
+          className="fixed top-0 h-40 z-40 pointer-events-none "
+        />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
         </SmoothScroll>
       </body>
     </html>

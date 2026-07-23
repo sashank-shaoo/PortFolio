@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative w-full bg-white border-t border-zinc-200 px-6 md:px-16 py-16 md:py-24 overflow-hidden">
+      className="relative w-full bg-olive-100 border-t border-zinc-200 px-6 md:px-16 py-16 md:py-24 overflow-clip">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[80px_1.6fr_1fr] gap-12 md:gap-16">
         {/* SIDE MARGIN: SECTION INDICATOR */}
         <div className="hidden md:flex flex-col items-center">
@@ -63,7 +63,7 @@ const Contact = () => {
               Get in Touch
             </p>
             <h2 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-none">
-              Let's Build <br />
+              {"Let's"} Build <br />
               <AuroraText>Something New.</AuroraText>
             </h2>
             <div className="h-1 w-16 bg-zinc-200 rounded-full" />
@@ -71,7 +71,7 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6 max-w-xl group">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
+              <div className="space-y-2 ">
                 <label className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest pl-1">
                   Name
                 </label>
@@ -80,7 +80,7 @@ const Contact = () => {
                   name="name"
                   required
                   placeholder="Your Name"
-                  className="w-full bg-zinc-50 border border-zinc-200 rounded-2xl p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400"
+                  className="w-full shadow-lg bg-zinc-50 border border-zinc-200 rounded-lg p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400"
                 />
               </div>
               <div className="space-y-2">
@@ -92,7 +92,7 @@ const Contact = () => {
                   name="email"
                   required
                   placeholder="hello@example.com"
-                  className="w-full bg-zinc-50 border border-zinc-200 rounded-2xl p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400"
+                  className="w-full bg-zinc-50 shadow-lg border border-zinc-200 rounded-lg p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400"
                 />
               </div>
             </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                 required
                 rows={5}
                 placeholder="Your Message"
-                className="w-full bg-zinc-50 border border-zinc-200 rounded-2xl p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400 resize-none"
+                className="w-full bg-zinc-50 shadow-lg border border-zinc-200 rounded-lg p-4 text-zinc-900 text-sm focus:outline-none focus:border-zinc-400 transition-all placeholder:text-zinc-400 resize-none"
               />
             </div>
 
@@ -113,7 +113,7 @@ const Contact = () => {
               <button 
                 type="submit"
                 disabled={status === "submitting"}
-                className="h-14 px-10 bg-black text-white font-black uppercase text-xs tracking-widest rounded-full hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group/btn disabled:opacity-70 disabled:hover:scale-100"
+                className="h-14 px-10 bg-black shadow-lg text-white font-black uppercase text-xs tracking-widest rounded-full hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group/btn disabled:opacity-70 disabled:hover:scale-100"
               >
                 {status === "submitting" ? "Sending..." : "Send Message"}
                 {status !== "submitting" && <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />}

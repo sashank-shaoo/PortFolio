@@ -70,6 +70,10 @@
     }
   }
 }
+html, body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
 
 :root {
   --background: oklch(1 0 0);
@@ -156,15 +160,13 @@
     @apply font-sans;
   }
 }
-
-/* Aggressive Scrollbar Removal */
-html, body {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
-}
-
 ::-webkit-scrollbar {
   display: none !important;
   width: 0 !important;
   height: 0 !important;
 }
+/* Aggressive Scrollbar Removal (Disabled)
+
+
+
+*/

@@ -4,7 +4,7 @@ import SoftAurora from "../SoftAurora";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex flex-col md:flex-row bg-white overflow-hidden pt-20">
+    <section className="relative min-h-screen w-full flex flex-col md:flex-row bg-olive-100 overflow-clip pt-20">
       {/* Muted Aurora Background */}
       <div className="hidden md:block absolute inset-0 z-0 opacity-50 pointer-events-none mix-blend-multiply overflow-hidden">
         <SoftAurora enableMouseInteraction={true} mouseInfluence={0.3} />

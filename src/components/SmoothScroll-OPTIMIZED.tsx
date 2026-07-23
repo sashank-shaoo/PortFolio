@@ -9,7 +9,7 @@ const lenisOptions = {
   smoothWheel: true,
   wheelMultiplier: 1,
   touchMultiplier: 1,
-  lerp: 0.08,
+  lerp: 0.07,
   overscroll: false,
   infinite: false,
   autoRaf: true,
