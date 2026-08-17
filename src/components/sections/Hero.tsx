@@ -43,7 +43,7 @@ const Hero = () => {
               <a
                 href="#contact"
                 className="h-14 px-8 border border-zinc-200 text-zinc-700 font-medium shadow-lg rounded-full hover:bg-zinc-50 transition-all flex items-center gap-3 text-sm">
-                 {`Let's Talk`}
+                {`Let's Talk`}
                 <Mail className="w-5 h-5 text-zinc-500" />
               </a>
             </div>
@@ -63,7 +63,8 @@ const Hero = () => {
             Bhubaneswar, Odisha, India
           </h3>
           <p className="text-zinc-600 text-sm">
-            Currently Studying at Gita autonomous college, Bhubaneswar, Odisha, India. Pursuing MCA in Computer Science and Engineering.
+            Currently Studying at Gita autonomous college, Bhubaneswar, Odisha,
+            India. Pursuing MCA in Computer Science and Engineering.
           </p>
         </div>
 
@@ -100,7 +101,9 @@ const Hero = () => {
             <div className="flex gap-8">
               {/* GitHub SVG */}
               <a
-                href="#"
+                href="https://github.com/sashank-shaoo"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 text-zinc-900 font-bold group">
                 <div className="p-3 rounded-xl bg-zinc-100 border shadow-lg border-zinc-200 group-hover:bg-black group-hover:text-white transition-all">
                   <svg
@@ -116,7 +119,9 @@ const Hero = () => {
               </a>
               {/* LinkedIn SVG */}
               <a
-                href="#"
+                href="https://linkedin.com/in/sashank-sahoo-282b5b2ab"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 text-zinc-900 font-bold group">
                 <div className="p-3 rounded-xl bg-zinc-100 border shadow-lg border-zinc-200 group-hover:bg-black group-hover:text-white transition-all">
                   <svg
