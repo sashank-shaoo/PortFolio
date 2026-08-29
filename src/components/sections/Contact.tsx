@@ -210,7 +210,7 @@ const Contact = () => {
               <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em]">
                 Find Me Online
               </p>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-row gap-3">
                 <a
                   href="https://github.com/sashank-shaoo"
                   target="_blank"
