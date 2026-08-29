@@ -23,12 +23,12 @@ const Projects = () => {
           <div className="h-px w-16 bg-border" />
 
           {/* Project Card 1 */}
-          <div className="border border-border p-6 bg-secondary/30">
+          <div className="border border-border p-6 bg-primary/30">
             <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
               RepoDocs - A Github repos analyzer . &nbsp; &nbsp; &nbsp; &nbsp;  <span className="text-sm font-sans font-normal text-muted-foreground">Currently On Development Stage !</span>
             </h3>
             <div className="flex flex-col gap-4 py-4 md:flex-row md:items-start md:justify-between md:gap-6 border-t border-b border-border/50 my-4">
-              <div className="relative w-full overflow-hidden border border-border aspect-[16/10] md:w-[45%]">
+              <div className="relative w-full bg-secondary overflow-hidden border border-border aspect-[16/10] md:w-[45%]">
                 <Image
                   src="/photos/RepoDoc/RepoDoc.png"
                   alt="Project One"
