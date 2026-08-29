@@ -166,7 +166,7 @@ const TechStack = () => {
           {icons.map((item, i) => (
             <div
               key={i}
-              className="group relative flex flex-col items-center justify-center p-8 border border-border bg-secondary/30 hover:bg-secondary transition-colors font-sans">
+              className="group shadow-lg relative flex flex-col items-center justify-center p-8 border border-border bg-secondary/30 hover:bg-secondary transition-colors font-sans">
               <div className="text-foreground">{item.icon}</div>
               <span className="mt-4 text-[10px] font-bold text-foreground uppercase tracking-widest">
                 {item.name}
@@ -190,7 +190,7 @@ const TechStack = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-4">
           {achivements.map((item, i) => (
             <Link href={item.url} target="_blank" key={i}>
-              <div className="group relative flex flex-col items-center justify-center p-4 md:p-8 border border-border bg-primary/30 hover:bg-secondary transition-colors font-sans h-full">
+              <div className="group relative flex flex-col shadow-lg items-center justify-center p-4 md:p-8 border border-border bg-primary/30 hover:bg-secondary transition-colors font-sans h-full">
                 <div className="text-foreground">{item.icon}</div>
                 <span className="mt-6 text-[10px] font-bold text-foreground uppercase tracking-widest text-center">
                   {item.name}

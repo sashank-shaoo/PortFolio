@@ -29,14 +29,14 @@ const Hero = () => {
             <div className="flex flex-wrap gap-6 pt-4">
               <a
                 href="#projects"
-                className="h-14 px-10 bg-primary text-primary-foreground font-bold uppercase tracking-widest text-xs border border-border hover:bg-primary/80 active:scale-95 transition-all flex items-center gap-3 group">
+                className="h-14 px-10 bg-primary shadow-lg text-primary-foreground font-bold uppercase tracking-widest text-xs border border-border hover:bg-primary/80 active:scale-95 transition-all flex items-center gap-3 group">
                 View My Work
                 <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
               <a
                 href="#contact"
-                className="h-14 px-8 border border-border text-foreground font-bold uppercase tracking-widest text-xs hover:bg-secondary transition-all flex items-center gap-3">
+                className="h-14 px-8 shadow-lg border border-border text-foreground font-bold uppercase tracking-widest text-xs hover:bg-secondary transition-all flex items-center gap-3">
                 {`Let's Talk`}
                 <Mail className="w-5 h-5 text-muted-foreground" />
               </a>

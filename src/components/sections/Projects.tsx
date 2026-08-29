@@ -23,12 +23,12 @@ const Projects = () => {
           <div className="h-px w-16 bg-border" />
 
           {/* Project Card 1 */}
-          <div className="border border-border p-6 bg-primary/30">
+          <div className="border border-border p-6 bg-primary/30 shadow-xl">
             <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
               RepoDocs - A Github repos analyzer . &nbsp; &nbsp; &nbsp; &nbsp;  <span className="text-sm font-sans font-normal text-muted-foreground">Currently On Development Stage !</span>
             </h3>
             <div className="flex flex-col gap-4 py-4 md:flex-row md:items-start md:justify-between md:gap-6 border-t border-b border-border/50 my-4">
-              <div className="relative w-full bg-secondary overflow-hidden border border-border aspect-[16/10] md:w-[45%]">
+              <div className="relative w-full shadow-lg bg-secondary overflow-hidden border border-border aspect-[16/10] md:w-[45%]">
                 <Image
                   src="/photos/RepoDoc/RepoDoc.png"
                   alt="Project One"
@@ -51,7 +51,7 @@ const Projects = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground hover:text-foreground/70 transition-colors flex-1 md:flex-none">
+                className="text-foreground shadow-lg hover:text-foreground/70 transition-colors flex-1 md:flex-none">
                 <div className="flex justify-center items-center gap-3 px-4 py-2 border border-border bg-secondary hover:bg-primary transition-colors">
                   <Globe className="w-4 h-4" />
                   <span className="text-xs font-bold uppercase tracking-widest">
@@ -63,7 +63,7 @@ const Projects = () => {
                 href="https://github.com/sashank-shaoo/Project-1.0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground hover:text-foreground/70 transition-colors flex-1 md:flex-none">
+                className="text-foreground shadow-lg hover:text-foreground/70 transition-colors flex-1 md:flex-none">
                 <div className="flex justify-center items-center gap-3 px-4 py-2 border border-border bg-secondary hover:bg-primary transition-colors">
                   <svg
                     viewBox="0 0 24 24"

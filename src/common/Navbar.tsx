@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border  shadow-lg">
       <div className="w-full px-6 md:px-12 h-16 flex justify-between items-center relative">
         
         {/* Logo/Title */}
@@ -45,12 +45,9 @@ const Navbar = () => {
 
         {/* Right CTA */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="#contact" className="text-sm font-medium text-foreground hover:text-foreground/70 transition-colors">
-            Contact
-          </a>
           <a
             href="#contact"
-            className="bg-primary text-primary-foreground text-xs font-bold px-5 py-2 border border-border hover:bg-primary/80 transition-colors uppercase tracking-widest">
+            className="bg-primary text-primary-foreground shadow-lg text-xs font-bold px-5 py-2 border border-border hover:bg-primary/80 transition-colors uppercase tracking-widest">
             Hire Me
           </a>
         </div>

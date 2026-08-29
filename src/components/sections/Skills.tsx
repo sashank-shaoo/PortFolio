@@ -141,10 +141,10 @@ const Skills = () => {
                 description="Specialized in Distributed Systems and Software Architecture. Graduated with Honors."
               />
               <EducationItem
-                degree="AWS Cloud Practitioner"
-                institution="Amazon Web Services (Certification)"
-                period="2025"
-                description="Certified professional for designing and deploying scalable cloud architectures."
+                degree="AWS Cloud Training"
+                institution="Amazon Web Services"
+                period="On Going"
+                description="Training for Cloud Computing and its Services"
               />
             </div>
           </div>
