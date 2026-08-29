@@ -1,5 +1,4 @@
 import React from "react";
-import { AuroraText } from "../ui/aurora-text";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,7 +11,7 @@ const icons = [
         alt="React"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -24,7 +23,7 @@ const icons = [
         alt="Next.js"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity invert"
       />
     ),
   },
@@ -36,7 +35,7 @@ const icons = [
         alt="Node.js"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -48,7 +47,7 @@ const icons = [
         alt="TypeScript"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -60,7 +59,7 @@ const icons = [
         alt="Tailwind"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -72,7 +71,7 @@ const icons = [
         alt="MongoDB"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -84,7 +83,7 @@ const icons = [
         alt="Redis"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -96,7 +95,7 @@ const icons = [
         alt="PostgreSQL"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -108,7 +107,7 @@ const icons = [
         alt="Npm Packages"
         width={32}
         height={32}
-        className="w-8 h-8"
+        className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity"
       />
     ),
   },
@@ -122,7 +121,7 @@ const achivements = [
         alt="Cloud 101"
         width={120}
         height={120}
-        className="w-30 h-30"
+        className="w-30 h-30 border border-border"
       />
     ),
     url: "https://www.credly.com/badges/a18eca58-c299-47b5-9fc6-dad58b0ed04b/linked_in?t=thmsli",
@@ -135,7 +134,7 @@ const achivements = [
         alt="Generative Ai"
         width={120}
         height={120}
-        className="w-30 h-30"
+        className="w-30 h-30 border border-border"
       />
     ),
     url: "https://www.credly.com/badges/a6ecd12e-dca6-4749-98ac-e4372cdfa4e7/linked_in?t=tg20mt",
@@ -146,54 +145,54 @@ const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="relative w-full bg-olive-100 px-6 md:px-16 py-20 overflow-clip gap-5">
-      <div className="max-w-7xl mx-auto space-y-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      className="relative w-full bg-background border-t border-border px-6 md:px-12 py-20 overflow-clip gap-5">
+      <div className="max-w-[1400px] mx-auto space-y-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-8">
           <div className="space-y-4">
-            <p className="text-zinc-500 font-black uppercase text-[10px] tracking-[0.6em]">
+            <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-[0.6em]">
               Powered By Modern Tech
             </p>
-            <h2 className="text-4xl md:text-5xl font-black text-zinc-900 uppercase tracking-tighter leading-none">
-              My Technology <AuroraText>Stack.</AuroraText>
+            <h2 className="text-4xl md:text-5xl font-heading font-normal text-foreground uppercase tracking-tight leading-none">
+              My Technology Stack.
             </h2>
           </div>
-          <p className="text-zinc-600 text-sm max-w-xs font-medium">
-            Selected tools and frameworks that i have used in my various
+          <p className="text-foreground/80 font-sans text-sm max-w-xs font-medium">
+            Selected tools and frameworks that I have used in my various
             projects so far.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-4">
           {icons.map((item, i) => (
             <div
               key={i}
-              className="group relative flex flex-col items-center justify-center ">
-              <div className="text-zinc-900">{item.icon}</div>
-              <span className="mt-4 text-[10px] font-black text-zinc-900 uppercase tracking-widest">
+              className="group relative flex flex-col items-center justify-center p-8 border border-border bg-secondary/30 hover:bg-secondary transition-colors font-sans">
+              <div className="text-foreground">{item.icon}</div>
+              <span className="mt-4 text-[10px] font-bold text-foreground uppercase tracking-widest">
                 {item.name}
               </span>
             </div>
           ))}
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-16 space-y-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div className="max-w-[1400px] mx-auto mt-24 space-y-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-8">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-black text-zinc-900 uppercase tracking-tighter leading-none">
-              My <AuroraText>ACHIVEMENTS.</AuroraText>
+            <h2 className="text-4xl md:text-5xl font-heading font-normal text-foreground uppercase tracking-tight leading-none">
+              My Achievements.
             </h2>
           </div>
-          <p className="text-zinc-600 text-sm max-w-xs font-medium">
-            Achivements throughout my journey.
+          <p className="text-foreground/80 font-sans text-sm max-w-xs font-medium">
+            Achievements throughout my journey.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 pt-4">
           {achivements.map((item, i) => (
             <Link href={item.url} target="_blank" key={i}>
-              <div className="group relative flex flex-col items-center justify-center ">
-                <div className="text-zinc-900">{item.icon}</div>
-                <span className="mt-4 text-[10px] font-black text-zinc-900 uppercase tracking-widest">
+              <div className="group relative flex flex-col items-center justify-center p-8 border border-border bg-secondary/30 hover:bg-secondary transition-colors font-sans h-full">
+                <div className="text-foreground">{item.icon}</div>
+                <span className="mt-6 text-[10px] font-bold text-foreground uppercase tracking-widest text-center">
                   {item.name}
                 </span>
               </div>

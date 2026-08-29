@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/common/Navbar";
 import Footer from "@/common/Footer";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import SmoothScroll from "@/components/SmoothScroll-OPTIMIZED";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-heading",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -28,14 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-[#cbcbd1] text-zinc-100 antialiased overflow-x-hidden">
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+      <body className="bg-background text-foreground antialiased overflow-x-hidden font-sans">
         <SmoothScroll>
-        <ProgressiveBlur
-          height="8rem"
-          position="top"
-          className="fixed top-0 h-40 z-40 pointer-events-none "
-        />
         <Navbar />
         <main>{children}</main>
         <Footer />
